@@ -1,0 +1,17 @@
+<template name="meteoride">
+    <div id="meteoride">
+        <!--
+            Pane Navigation
+            Inspector Pane
+            Editor Pane
+        -->
+        {{#each resources}}
+            {{> resource}}
+        {{/each}}
+    </div>
+</template>
+
+<template name="resource">
+    <h3>{{name}}</h3>
+    <p>{{path}}</p>
+</template>

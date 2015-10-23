@@ -1,0 +1,1 @@
+Meteor.publish 'resources', -> Resources.find()

@@ -1,0 +1,43 @@
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+
+<body>
+  {{> main}}
+</body>
+
+<template name="main">
+    <main id="main">
+        {{> addPost}}
+        {{#each posts}}
+            {{> post}}
+        {{/each}}
+        {{#each files}}
+            {{> editorPane}}
+        {{/each}}
+    </main>
+</template>
+
+<template name="addPost">
+    <form id="addPost">
+        <div class="form-control">
+            <label for="title">Title</label>
+            <input type="text" name="title" />
+        </div>
+        <div class="form-control">
+            <label for="content">Content</label>
+            <textarea name="content"></textarea>
+        </div>
+        <button type="submit">Create</button>
+    </form>
+</template>
+
+<template name="post">
+    <div>
+        <h3>{{title}}</h3>
+        <span class="right">{{date}}</span>
+        <p>{{content}}</p>
+        <hr />
+    </div>
+</template>
