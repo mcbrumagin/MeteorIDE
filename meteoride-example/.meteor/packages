@@ -22,3 +22,5 @@ insecure                # Allow all DB writes from clients (for prototyping)
 coffeescript
 meteoride
 reactive-dict
+reload
+mcbrumagin:meteor-events

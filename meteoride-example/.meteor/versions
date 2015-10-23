@@ -53,6 +53,7 @@ jquery@1.11.4
 launch-screen@1.0.4
 livedata@1.0.15
 logging@1.0.8
+mcbrumagin:meteor-events@0.0.1
 meteor@1.1.9
 meteor-base@1.0.1
 meteoride@0.0.0
