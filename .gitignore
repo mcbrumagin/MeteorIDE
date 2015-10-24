@@ -1,6 +1,7 @@
 .idea
 .astronomeid
 meteor-events
+settings.json
 
 # Logs
 logs

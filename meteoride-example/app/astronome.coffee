@@ -4,7 +4,7 @@
 if Meteor.isServer
   Meteor.startup ->
     parameters = Astronome.checkParams
-      sourcePath: "/root/MeteorIDE/meteoride-example/app/"
+      sourcePath: Meteor.settings.sourcePath
       idFilename: '.astronomeid'
       directoryCollection: Directories
       fileCollection: Files
