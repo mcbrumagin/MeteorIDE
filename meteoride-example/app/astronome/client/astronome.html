@@ -5,3 +5,19 @@
         <textarea>{{content}}</textarea>
     </div>
 </template>
+
+<template name="recursiveDirectory">
+    <ul>
+        {{#each directoryItems}}
+            <li>
+                {{#if isFile}}
+                    <i class="fa fa-file"></i>
+                {{else}}
+                    <i class="fa fa-folder"></i>
+                {{/if}}
+                
+                {{> recursiveDirectory}}
+            </li>
+        {{/each}}
+    </ul>
+</template>

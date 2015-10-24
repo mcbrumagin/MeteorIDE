@@ -239,7 +239,7 @@
             p.parentDir = subdir
             recursiveParseDir p, relEltPath + path.sep
             restore p, bkp
-        else processFile p, dir, elt, relEltPath + path.sep, eltStats.mtime.getTime()
+        else processFile p, dir, elt, relEltPath, eltStats.mtime.getTime()
 
     parse = (params) ->
       p = checkParams params
