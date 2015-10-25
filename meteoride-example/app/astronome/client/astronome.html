@@ -12,11 +12,12 @@
             <li>
                 {{#if isFile}}
                     <i class="fa fa-file"></i>
+                    <span>{{name}}</span>
                 {{else}}
                     <i class="fa fa-folder"></i>
+                    <span>{{name}}</span>
+                    {{> recursiveDirectory children}}
                 {{/if}}
-                
-                {{> recursiveDirectory}}
             </li>
         {{/each}}
     </ul>
