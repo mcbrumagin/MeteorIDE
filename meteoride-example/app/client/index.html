@@ -16,6 +16,9 @@
         {{#each files}}
             {{> editorPane}}
         {{/each}}
+        {{#with directory}}
+            {{> recursiveDirectory}}
+        {{/with}}
     </main>
 </template>
 
